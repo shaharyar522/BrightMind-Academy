@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightMind Academy - Where Young Minds Shine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="mascot"></div>
+            <div class="logo">BrightMind</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Programs">Programs</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#Facilities">Facilities</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="floating-elements">
+            <div class="floating-element fe-1">✏️</div>
+            <div class="floating-element fe-2">📚</div>
+            <div class="floating-element fe-3">🔍</div>
+            <div class="floating-element fe-4">🎨</div>
+        </div>
+
+        <div class="hero-content">
+            <h1>Where Young Minds Shine Bright</h1>
+            <p>At BrightMind Academy, we nurture curiosity, creativity, and confidence in every child through play-based
+                learning and exploration.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Download Brochure</button>
+                <button  class="btn btn-secondary" onclick="document.getElementById('teachers').scrollIntoView({behavior: 'smooth'});">
+  Meet Our Teachers
+</button>
+
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-placeholder">
+                👧👦
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Group Programs -->
+    <section id="Programs" class="age-groups">
+        <h2 class="section-title">Our Programs</h2>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="playgroup">Playgroup</div>
+            <div class="tab" data-tab="nursery">Nursery</div>
+            <div class="tab" data-tab="kindergarten">Kindergarten</div>
+            <div class="tab" data-tab="elementary">Elementary</div>
+        </div>
+
+        <div class="tab-content active" id="playgroup">
+            <h3>Playgroup (2-3 years)</h3>
+            <p>Our playgroup program focuses on sensory exploration, social skills, and early communication through
+                guided play and creative activities.</p>
+        </div>
+
+        <div class="tab-content" id="nursery">
+            <h3>Nursery (3-4 years)</h3>
+            <p>Nursery students engage in theme-based learning that encourages curiosity, problem-solving, and
+                cooperation with peers.</p>
+        </div>
+
+        <div class="tab-content" id="kindergarten">
+            <h3>Kindergarten (4-6 years)</h3>
+            <p>Our kindergarten program prepares children for elementary school with a balanced approach of structured
+                learning and creative play.</p>
+        </div>
+
+        <div class="tab-content" id="elementary">
+            <h3>Elementary (6-10 years)</h3>
+            <p>Elementary students benefit from our project-based curriculum that fosters critical thinking, creativity,
+                and a love for learning.</p>
+        </div>
+    </section>
+
+    <!-- A Day in the Life Timeline -->
+    <section>
+        <h2 class="section-title">A Day at BrightMind</h2>
+
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">🌅</div>
+                    <div class="timeline-content">
+                        <h3>Morning Circle</h3>
+                        <p>8:00 AM</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🔤</div>
+                    <div class="timeline-content">
+                        <h3>Language Time</h3>
+                        <p>9:30 AM</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🍎</div>
+                    <div class="timeline-content">
+                        <h3>Snack Break</h3>
+                        <p>10:15 AM</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🧮</div>
+                    <div class="timeline-content">
+                        <h3>Math & Logic</h3>
+                        <p>10:45 AM</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎨</div>
+                    <div class="timeline-content">
+                        <h3>Creative Arts</h3>
+                        <p>12:00 PM</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🏃</div>
+                    <div class="timeline-content">
+                        <h3>Outdoor Play</h3>
+                        <p>1:30 PM</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">👋</div>
+                    <div class="timeline-content">
+                        <h3>Home Time</h3>
+                        <p>3:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Gallery -->
+    <section id="Facilities">
+        <h2 class="section-title">Our Facilities</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t3.ftcdn.net/jpg/03/70/98/60/240_F_370986058_SJAlBZxb6ewF1BlwRUhpbDi0DDNy6oZP.jpg"
+                        alt="Interactive Classrooms">
+                </div>
+                <div class="gallery-caption">Interactive Classrooms</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t4.ftcdn.net/jpg/08/86/60/55/240_F_886605523_XbIPa2hpPLdiA9zH1PCPf36FpLRK4BFi.jpg"
+                        alt="Outdoor Playground">
+                </div>
+                <div class="gallery-caption">Outdoor Playground</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t3.ftcdn.net/jpg/08/21/37/00/240_F_821370024_3vgkYuUR8yf4HC4NBHvheBVxxT9raVnC.jpg"
+                        alt="Art Studio">
+                </div>
+                <div class="gallery-caption">Art Studio</div>
+            </div>
+
+
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t4.ftcdn.net/jpg/12/43/08/49/240_F_1243084960_5lM5lTS0zYnH1UOWicjwyWnMv8lnapua.jpg"
+                        alt="Art Studio">
+                </div>
+                <div class="gallery-caption">Library</div>
+            </div>
+
+
+
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t4.ftcdn.net/jpg/09/11/87/43/240_F_911874310_UabMxniMRm2cnGpRc6qHGToqNREnm41I.jpg"
+                        alt="Art Studio">
+                </div>
+                <div class="gallery-caption">Music Room</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t4.ftcdn.net/jpg/01/98/94/25/240_F_198942501_7PecUF3yqFYnHdcA41xHYuUoscEPInJF.jpg"
+                        alt="Science Lab">
+                </div>
+                <div class="gallery-caption">Science Lab</div>
+            </div>
+
+            <!-- New Option 1 -->
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t4.ftcdn.net/jpg/13/91/85/21/240_F_1391852141_QzpCCqspNOyPZSmObpNJVYG6wvvUCFF8.jpg"
+                        alt="Sports Complex">
+                </div>
+                <div class="gallery-caption">Sports Complex</div>
+            </div>
+
+            <!-- New Option 2 -->
+
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="https://t4.ftcdn.net/jpg/14/97/68/95/240_F_1497689516_HfvCKz4Pr9d5EU7RKiIU8cVMWuJqonQi.jpg"
+                        alt="Sports Complex">
+                </div>
+                <div class="gallery-caption">Computer Lab</div>
+            </div>
+
+            Music Room
+        </div>
+    </section>
+
+
+    <!-- Teacher Introductions -->
+    <section id="teachers" class="teachers">
+        <h2 class="section-title">Meet Our Teachers</h2>
+
+        <div class="teacher-cards">
+            <div class="teacher-card">
+                <div class="teacher-avatar">👩🏫</div>
+                <h3>Ms. Emily</h3>
+                <p>Playgroup Lead</p>
+                <p>8 years experience</p>
+            </div>
+            <div class="teacher-card">
+                <div class="teacher-avatar">👨🏫</div>
+                <h3>Mr. David</h3>
+                <p>Kindergarten Teacher</p>
+                <p>10 years experience</p>
+            </div>
+            <div class="teacher-card">
+                <div class="teacher-avatar">👩🏫</div>
+                <h3>Ms. Sophia</h3>
+                <p>Art Specialist</p>
+                <p>6 years experience</p>
+            </div>
+            <div class="teacher-card">
+                <div class="teacher-avatar">👨🏫</div>
+                <h3>Mr. James</h3>
+                <p>Elementary Science</p>
+                <p>12 years experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <h2 class="section-title">What Parents Say</h2>
+
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p class="testimonial-text">BrightMind has been a blessing for our daughter. She's excited to go to
+                    school every morning!</p>
+                <p class="testimonial-author">- Sarah's Mom, Kindergarten</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">The teachers are amazing and truly care about each child's development and
+                    happiness.</p>
+                <p class="testimonial-author">- James' Dad, Nursery</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">We've seen such growth in our son's confidence and social skills since he
+                    started at BrightMind.</p>
+                <p class="testimonial-author">- Lily's Parents, Playgroup</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section>
+        <h2 class="section-title">Upcoming Events</h2>
+
+        <div class="calendar">
+            <div class="calendar-header">
+                <h3>September 2023</h3>
+            </div>
+            <div class="calendar-grid">
+                <div class="calendar-cell header">Sun</div>
+                <div class="calendar-cell header">Mon</div>
+                <div class="calendar-cell header">Tue</div>
+                <div class="calendar-cell header">Wed</div>
+                <div class="calendar-cell header">Thu</div>
+                <div class="calendar-cell header">Fri</div>
+                <div class="calendar-cell header">Sat</div>
+
+                <!-- Empty days -->
+                <div class="calendar-cell"></div>
+                <div class="calendar-cell"></div>
+                <div class="calendar-cell"></div>
+                <div class="calendar-cell"></div>
+                <div class="calendar-cell"></div>
+                <div class="calendar-cell">1</div>
+                <div class="calendar-cell">2</div>
+
+                <!-- Week with events -->
+                <div class="calendar-cell">3</div>
+                <div class="calendar-cell event">4<span>Parent Orientation</span></div>
+                <div class="calendar-cell">5</div>
+                <div class="calendar-cell event">6<span>Art Exhibition</span></div>
+                <div class="calendar-cell">7</div>
+                <div class="calendar-cell event">8<span>Sports Day</span></div>
+                <div class="calendar-cell">9</div>
+
+                <!-- More weeks -->
+                <div class="calendar-cell">10</div>
+                <div class="calendar-cell">11</div>
+                <div class="calendar-cell event">12<span>Science Fair</span></div>
+                <div class="calendar-cell">13</div>
+                <div class="calendar-cell">14</div>
+                <div class="calendar-cell event">15<span>Puppet Show</span></div>
+                <div class="calendar-cell">16</div>
+
+                <div class="calendar-cell">17</div>
+                <div class="calendar-cell">18</div>
+                <div class="calendar-cell">19</div>
+                <div class="calendar-cell event">20<span>Field Trip</span></div>
+                <div class="calendar-cell">21</div>
+                <div class="calendar-cell">22</div>
+                <div class="calendar-cell">23</div>
+
+                <div class="calendar-cell">24</div>
+                <div class="calendar-cell event">25<span>Music Recital</span></div>
+                <div class="calendar-cell">26</div>
+                <div class="calendar-cell">27</div>
+                <div class="calendar-cell event">28<span>PT Meeting</span></div>
+                <div class="calendar-cell">29</div>
+                <div class="calendar-cell">30</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Portal -->
+    <section>
+        <h2 class="section-title">Parent Portal</h2>
+
+        <div class="portal-container">
+            <h3>Access Your Child's Progress</h3>
+            <p>Login to view attendance, grades, and important announcements</p>
+
+            <div class="portal-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button class="btn btn-primary">Login to Portal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions">
+        <h2 class="section-title">Admissions</h2>
+
+        <div class="admissions-container">
+            <div class="admissions-process">
+                <h3>Join Our BrightMind Family</h3>
+                <p>We're delighted you're considering BrightMind Academy for your child's educational journey. Our
+                    admissions process is designed to be straightforward and welcoming.</p>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Inquiry & Tour</h4>
+                            <p>Submit an inquiry form and schedule a campus tour to experience our environment
+                                firsthand.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Application</h4>
+                            <p>Complete our online application form and submit required documents.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Assessment</h4>
+                            <p>Your child will participate in a age-appropriate assessment activity (for Kindergarten
+                                and above).</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Enrollment</h4>
+                            <p>Receive acceptance notification and complete enrollment paperwork.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admissions-requirements">
+                <h3>Admission Requirements</h3>
+                <div class="requirements-grid">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">📋</div>
+                        <h4>Application Form</h4>
+                        <p>Complete online application with all required information</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">📄</div>
+                        <h4>Birth Certificate</h4>
+                        <p>Copy of official birth certificate</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">🏥</div>
+                        <h4>Medical Records</h4>
+                        <p>Immunization records and recent physical exam</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">📸</div>
+                        <h4>Photos</h4>
+                        <p>Two recent passport-sized photographs</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">📚</div>
+                        <h4>Previous Records</h4>
+                        <p>For transfers: previous school records (if applicable)</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">👪</div>
+                        <h4>Parent Interview</h4>
+                        <p>Meeting with school administration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tuition-info">
+                <h3>Tuition & Fees</h3>
+                <div class="tuition-table-container">
+                    <table class="tuition-table">
+                        <thead>
+                            <tr>
+                                <th>Program</th>
+                                <th>Age</th>
+                                <th>Annual Tuition</th>
+                                <th>Registration Fee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Playgroup</td>
+                                <td>2-3 years</td>
+                                <td>$8,500</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Nursery</td>
+                                <td>3-4 years</td>
+                                <td>$9,200</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Kindergarten</td>
+                                <td>4-6 years</td>
+                                <td>$10,500</td>
+                                <td>$350</td>
+                            </tr>
+                            <tr>
+                                <td>Elementary</td>
+                                <td>6-10 years</td>
+                                <td>$12,000</td>
+                                <td>$400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="tuition-note">* Financial aid and sibling discounts available. Payment plans can be arranged.
+                </p>
+            </div>
+
+            <div class="inquiry-form-container">
+                <h3>Request Information</h3>
+                <p>Interested in learning more? Fill out the form below and our admissions team will contact you
+                    shortly.</p>
+
+                <form class="inquiry-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parent-name">Parent's Name *</label>
+                            <input type="text" id="parent-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="child-name">Child's Name *</label>
+                            <input type="text" id="child-name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="child-dob">Child's Date of Birth *</label>
+                            <input type="date" id="child-dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="program-interest">Program Interested In *</label>
+                            <select id="program-interest" required>
+                                <option value="">Select a program</option>
+                                <option value="playgroup">Playgroup (2-3 years)</option>
+                                <option value="nursery">Nursery (3-4 years)</option>
+                                <option value="kindergarten">Kindergarten (4-6 years)</option>
+                                <option value="elementary">Elementary (6-10 years)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message/Questions</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+  
+
+
+    <!-- Footer -->
+    <footer id="Contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BrightMind Academy</h3>
+                <p>Where young minds shine bright through play, exploration, and discovery.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Learning Street, Education City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> hello@brightmind.edu</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay updated with our latest news and events.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 BrightMind . All rights reserved. designed buy Shahar Yar</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+
+    </script>
+</body>
+
+</html>
