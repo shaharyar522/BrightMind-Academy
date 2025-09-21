@@ -1018,3 +1018,313 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* responisve styling */
+
+/* Add these media queries to your existing CSS */
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  nav ul.show {
+    display: flex;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+  }
+  
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  
+  .hero p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-content, .hero-image {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .hero-image-placeholder {
+    height: 250px;
+    font-size: 5rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  /* Section padding */
+  section {
+    padding: 3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Tabs */
+  .tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Timeline */
+  .timeline-container {
+    padding: 1rem 0;
+  }
+  
+  .timeline {
+    min-width: 600px;
+  }
+  
+  .timeline-item {
+    min-width: 120px;
+  }
+  
+  /* Gallery */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Teacher cards */
+  .teacher-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .teacher-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonial-card {
+    width: 100%;
+  }
+  
+  /* Calendar */
+  .calendar {
+    padding: 1rem;
+  }
+  
+  .calendar-cell {
+    min-height: 50px;
+    font-size: 0.9rem;
+  }
+  
+  .calendar-cell.event span {
+    font-size: 0.7rem;
+  }
+  
+  /* Portal */
+  .portal-container {
+    padding: 1.5rem;
+  }
+  
+  .portal-form {
+    padding: 1.5rem;
+  }
+  
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-contact p {
+    justify-content: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  /* Admissions section */
+  .process-steps {
+    flex-direction: column;
+  }
+  
+  .process-step {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .step-number {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .requirements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tuition-table {
+    font-size: 0.9rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .timeline {
+    min-width: 500px;
+  }
+  
+  .timeline-item {
+    min-width: 100px;
+  }
+  
+  .timeline-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .calendar-cell {
+    min-height: 40px;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+  
+  .tuition-table th,
+  .tuition-table td {
+    padding: 0.5rem;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  
+  .timeline {
+    min-width: 400px;
+  }
+  
+  .timeline-item {
+    min-width: 80px;
+  }
+  
+  .timeline-content h3 {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-content p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Add viewport meta tag if not already in HTML */
+/* Make sure you have this in your HTML head: */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* Additional utility classes for better mobile experience */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Prevent horizontal scrolling on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  nav a, .btn, .tab, .teacher-card, .testimonial-card {
+    min-height: 44px; /* Minimum touch target size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
