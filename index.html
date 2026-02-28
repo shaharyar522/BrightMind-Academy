@@ -13,57 +13,81 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo-container">
+        <a href="#" class="logo-container">
             <div class="mascot"></div>
-            <div class="logo">BrightMind</div>
-        </div>
+            <div class="logo">BrightMind</div>   
+        </a>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#Programs">Programs</a></li>
-                <li><a href="#teachers">Teachers</a></li>
                 <li><a href="#Facilities">Facilities</a></li>
-                <li><a href="#">Admissions</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#admissions">Admissions</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
         </nav>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-
-        <div class="floating-elements">
-            <div class="floating-element fe-1">✏️</div>
-            <div class="floating-element fe-2">📚</div>
-            <div class="floating-element fe-3">🔍</div>
-            <div class="floating-element fe-4">🎨</div>
-        </div>
 
         <div class="hero-content">
-            <h1>Where Young Minds Shine Bright</h1>
-            <p>At BrightMind Academy, we nurture curiosity, creativity, and confidence in every child through play-based
-                learning and exploration.</p>
+            <h1>Where Young Minds <span>Shine Bright</span></h1>
+            <p>At BrightMind Academy, we nurture curiosity, creativity, and confidence in every child through an elite,
+                play-based learning environment curated for future leaders.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">Download Brochure</button>
-                <button class="btn btn-secondary"
-                    onclick="document.getElementById('teachers').scrollIntoView({behavior: 'smooth'});">
-                    Meet Our Teachers
-                </button>
-
+                <a href="#admissions" class="btn btn-primary">
+                    Apply Now <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#Programs" class="btn btn-secondary">
+                    Explore Programs
+                </a>
             </div>
         </div>
         <div class="hero-image">
-            <div class="hero-image-placeholder">
-                👧👦
+            <div class="floating-badge badge-1">
+                <div class="badge-icon"><i class="fas fa-star"></i></div>
+                <div class="badge-text">
+                    <span class="badge-title">50+</span>
+                    <span class="badge-subtitle">Expert Educators</span>
+                </div>
+            </div>
+            <div class="floating-badge badge-2">
+                <div class="badge-icon"><i class="fas fa-heart"></i></div>
+                <div class="badge-text">
+                    <span class="badge-title">500+</span>
+                    <span class="badge-subtitle">Happy Families</span>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1000&auto=format&fit=crop"
+                    alt="Children learning joyfully in a modern classroom">
             </div>
         </div>
     </section>
+
+    <!-- Trust Indicators Bar -->
+    <div class="trust-bar"
+        style="background: white; padding: 2rem 5%; display: flex; justify-content: space-around; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); gap: 2rem; flex-wrap: wrap; text-align: center;">
+        <div style="flex: 1; min-width: 150px; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s ease;">
+            <h3 style="font-size: 1.2rem; color: var(--dark-muted);">National Education Board</h3>
+        </div>
+        <div style="flex: 1; min-width: 150px; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s ease;">
+            <h3 style="font-size: 1.2rem; color: var(--dark-muted);">Global STEM Certified</h3>
+        </div>
+        <div style="flex: 1; min-width: 150px; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s ease;">
+            <h3 style="font-size: 1.2rem; color: var(--dark-muted);">Excellence in Childcare 2025</h3>
+        </div>
+        <div style="flex: 1; min-width: 150px; opacity: 0.6; filter: grayscale(100%); transition: all 0.3s ease;">
+            <h3 style="font-size: 1.2rem; color: var(--dark-muted);">SafeSpace Verified</h3>
+        </div>
+    </div>
 
     <!-- Age Group Programs -->
     <section id="Programs" class="age-groups">
@@ -162,12 +186,12 @@
 
     <!-- Facilities Gallery -->
     <section id="Facilities">
-        <h2 class="section-title">Our Facilities</h2>
+        <h2 class="section-title">State-of-the-Art Facilities</h2>
 
         <div class="gallery">
             <div class="gallery-item">
                 <div class="gallery-img">
-                    <img src="https://t3.ftcdn.net/jpg/03/70/98/60/240_F_370986058_SJAlBZxb6ewF1BlwRUhpbDi0DDNy6oZP.jpg"
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop"
                         alt="Interactive Classrooms">
                 </div>
                 <div class="gallery-caption">Interactive Classrooms</div>
@@ -175,67 +199,43 @@
 
             <div class="gallery-item">
                 <div class="gallery-img">
-                    <img src="https://t4.ftcdn.net/jpg/08/86/60/55/240_F_886605523_XbIPa2hpPLdiA9zH1PCPf36FpLRK4BFi.jpg"
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=800&auto=format&fit=crop"
                         alt="Outdoor Playground">
                 </div>
-                <div class="gallery-caption">Outdoor Playground</div>
+                <div class="gallery-caption">Nature Playground</div>
             </div>
 
             <div class="gallery-item">
                 <div class="gallery-img">
-                    <img src="https://t3.ftcdn.net/jpg/08/21/37/00/240_F_821370024_3vgkYuUR8yf4HC4NBHvheBVxxT9raVnC.jpg"
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop"
                         alt="Art Studio">
                 </div>
-                <div class="gallery-caption">Art Studio</div>
+                <div class="gallery-caption">Creative Arts Studio</div>
             </div>
-
 
             <div class="gallery-item">
                 <div class="gallery-img">
-                    <img src="https://t4.ftcdn.net/jpg/12/43/08/49/240_F_1243084960_5lM5lTS0zYnH1UOWicjwyWnMv8lnapua.jpg"
-                        alt="Art Studio">
+                    <img src="https://images.unsplash.com/photo-1568222840500-80598b0f9f30?q=80&w=800&auto=format&fit=crop"
+                        alt="Library">
                 </div>
-                <div class="gallery-caption">Library</div>
+                <div class="gallery-caption">Discovery Library</div>
             </div>
-
-
 
             <div class="gallery-item">
                 <div class="gallery-img">
-                    <img src="https://t4.ftcdn.net/jpg/09/11/87/43/240_F_911874310_UabMxniMRm2cnGpRc6qHGToqNREnm41I.jpg"
-                        alt="Art Studio">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=800&auto=format&fit=crop"
+                        alt="Music Room">
                 </div>
-                <div class="gallery-caption">Music Room</div>
+                <div class="gallery-caption">Music & Performance</div>
             </div>
 
             <div class="gallery-item">
                 <div class="gallery-img">
-                    <img src="https://t4.ftcdn.net/jpg/01/98/94/25/240_F_198942501_7PecUF3yqFYnHdcA41xHYuUoscEPInJF.jpg"
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800&auto=format&fit=crop"
                         alt="Science Lab">
                 </div>
-                <div class="gallery-caption">Science Lab</div>
+                <div class="gallery-caption">STEM Discovery Lab</div>
             </div>
-
-            <!-- New Option 1 -->
-            <div class="gallery-item">
-                <div class="gallery-img">
-                    <img src="https://t4.ftcdn.net/jpg/13/91/85/21/240_F_1391852141_QzpCCqspNOyPZSmObpNJVYG6wvvUCFF8.jpg"
-                        alt="Sports Complex">
-                </div>
-                <div class="gallery-caption">Sports Complex</div>
-            </div>
-
-            <!-- New Option 2 -->
-
-            <div class="gallery-item">
-                <div class="gallery-img">
-                    <img src="https://t4.ftcdn.net/jpg/14/97/68/95/240_F_1497689516_HfvCKz4Pr9d5EU7RKiIU8cVMWuJqonQi.jpg"
-                        alt="Sports Complex">
-                </div>
-                <div class="gallery-caption">Computer Lab</div>
-            </div>
-
-            Music Room
         </div>
     </section>
 
@@ -594,7 +594,7 @@
         </div>
 
         <div class="copyright">
-            <p>© 2025 BrightMind . All rights reserved. designed buy Shahar Yar</p>
+            <p>© 2025 BrightMind Academy. All rights reserved. Designed with ❤️ by <span>Shahar Yar</span></p>
         </div>
     </footer>
 
